@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rebeccapurple;
+}
+
+.titulo {
+    font-family: 'Pixelify Sans', cursive;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Animacion titulo*/
+
+.zoomInRight {
+    -webkit-animation-name: zoomInRight;
+    animation-name: zoomInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+
+    @-webkit-keyframes zoomInRight {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+    @keyframes zoomInRight {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+
+/* Fin animacion */
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-family: 'Gabarito', cursive;
+    font-size: 50px;
+}
+
+.nameOrg {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+}
+
+/* TOP USER */
+
+.topUser {
+    /* border: solid white; */
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+#topName {
+    /* border: solid green; */
+    width: 100%;
+    font-size: xx-large;
+    display: flex;
+    padding: 15px 0px 0px 30px;
+}
+
+#topFlag {
+    /* border: solid green; */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    height: 240px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#topOrg {
+    /* border: solid green; */
+    flex-grow: 3;
+    font-size: 4rem;
+}
+
+#topScore {
+    /* border: solid green; */
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 200px;
+}
+
+#topCards {
+    /* border: solid green; */
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BOTTOM USER */
+
+.bottomUser {
+    /* border: solid darkblue; */
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+#bottomName {
+    /* border: solid green; */
+    width: 100%;
+    font-size: xx-large;
+    display: flex;
+    padding: 15px 0px 0px 30px;
+}
+
+#bottomFlag {
+    /* border: solid green; */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottomOrg {
+    /* border: solid green; */
+    flex-grow: 3;
+    font-size: 4rem;
+}
+
+#bottomScore {
+    /* border: solid green; */
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 200px;
+}
+
+#bottomCards {
+    /* border: solid green; */
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* YELLOW CARD */
+
+.yellowCard {
+    background-color: yellow;
+    width: 60px;
+    height: 110px;
+}
+
+/* BOTTOM BAR */
+
+.bottomBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 0px 10px 0px 10px;
+    height: 3rem;
+    font-size: x-large;
+}
+
+#categoria {
+    flex-grow: 3;
+    font-size: large;
+    padding-left: 30px;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: xx-large;
+}

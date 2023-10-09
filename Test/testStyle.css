@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.counter {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.points, .penalties {
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#score {
+    font-size: 24px;
+    margin: 0;
+}

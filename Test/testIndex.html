@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Judo Match Scoring</title>
+</head>
+<body>
+<h1>Judo Match Scoring</h1>
+
+
+<div>
+    <label for="playerName">Enter player's name:</label>
+    <input type="text" id="playerName">
+  </div>
+  
+  <div>
+    <label for="opponentName">Enter opponent's name:</label>
+    <input type="text" id="opponentName">
+  </div>
+  
+<div>
+  <label for="gender">Select player's gender:</label>
+  <select id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="young">Young</option>
+    <option value="cadet">Cadet</option>
+  </select>
+</div>
+
+<div>
+  <button id="startButton">Start Match</button>
+</div>
+
+<div>
+  <h2>Match Status</h2>
+  <p>Time remaining: <span id="timeRemaining">0</span> seconds</p>
+  <p>Player Score: Ippon (<span id="playerIppon">0</span>), Waza-ari (<span id="playerWazaAri">0</span>)</p>
+  <p>Opponent Score: Ippon (<span id="opponentIppon">0</span>), Waza-ari (<span id="opponentWazaAri">0</span>)</p>
+  <p>Shidos: <span id="shidos">0</span></p>
+  <p id="matchResult"></p>
+</div>
+<div>
+    <button id="addIpponButton" disabled>Add Ippon</button>
+    <button id="addWazaAriButton" disabled>Add Waza-ari</button>
+    <button id="addShidoButton" disabled>Add Shido</button>
+    <button id="stopButton" disabled>Stop</button>
+    <button id="resetButton" disabled>Reset</button>
+  </div>
+
+<script src="testFunction.js"></script>
+</body>
+</html>
